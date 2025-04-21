@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Video to MP3 Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Video to MP3 Converter</h1>
+    <div class="upload-area" id="upload-area">
+      <p>Drag & Drop your video file here or <span id="file-select">click to upload</span></p>
+      <input type="file" id="file-input" accept="video/*" hidden>
+    </div>
+    <p id="file-name"></p>
+    <button id="convert-btn" disabled>Convert to MP3</button>
+    <div class="progress-bar" id="progress-bar">
+      <div class="progress" id="progress"></div>
+    </div>
+    <p id="status-text"></p>
+    <a id="download-link" href="#" download hidden>Download MP3</a>
+  </div>
+  <script src="https://unpkg.com/@ffmpeg/ffmpeg@0.12.1/dist/umd/ffmpeg.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
